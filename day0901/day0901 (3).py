@@ -11,7 +11,7 @@
 # 让一个字符串的某些位置变成动态可传入的
 # 格式化输出
 name = input("Name:")
-age = (input("Age:"))
+age = input("Age:")
 job = input("Job:")
 
 # %: 占位符 s-->str d i r
