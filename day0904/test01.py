@@ -44,4 +44,3 @@ print(1 and 2 or 3 and 4)  # 2
 
 # 思考题
 print(1 > 2 and 3 or 6)  # 6
-
