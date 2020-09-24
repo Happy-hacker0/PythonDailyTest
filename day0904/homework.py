@@ -36,13 +36,23 @@
 #     if i % 2 != 0:
 #         print(i, " ")
 #     i += 1
-
-i = 1
-addition = 0
-while i < 101:
-    if i % 2 == 0:
-        addition -= i
+#
+# i = 1
+# addition = 0
+# while i < 101:
+#     if i % 2 == 0:
+#         addition -= i
+#     else:
+#         addition += i
+#     i += 1
+# print(addition)
+count = 1
+while count <= 3:
+    username = input("请输入用户名：");
+    password = input("请输入密码：");
+    if username == 'zzp' and password == '123':
+        print("登陆成功！")
+        break
     else:
-        addition += i
-    i += 1
-print(addition)
+        print('''还剩 %d 次机会''' % (3 - count))
+    count += 1
