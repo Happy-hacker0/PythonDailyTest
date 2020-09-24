@@ -36,4 +36,23 @@ print(bool(s))
 # bool ---> str 无意义
 print(str(False))
 
+# 字符串的常用方法
+s = 'taiBai'
+# lower upper (遇到中文自动忽略)
+# 不会对源字符串进行任何操作 都会产生一个新的字符串
+s1 = s.upper()
+print(s1)
+print(s1, type(s1))
 
+# 应用：
+username = input("请输入用户名：")
+password = input("请输入密码：")
+code = "QweR"
+your_code = input("请输入验证码：不区分大小写")
+if your_code.upper() == code.upper():
+    if username == "zzp" and password == "123":
+        print("登陆成功")
+    else:
+        print("用户名或密码错误")
+else:
+    print('验证码错误')
